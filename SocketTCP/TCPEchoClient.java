@@ -14,7 +14,7 @@ public class TCPEchoClient {
 			System.out.println("Client đã được tạo");
 			InputStream is = s.getInputStream();
 			OutputStream os = s.getOutputStream();
-			for(int i='0';i<=9;i++) {
+			for(int i='0';i<='9';i++) {
 				os.write(i);
 				int ch = is.read();
 				System.out.println((char)ch);
